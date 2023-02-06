@@ -5,11 +5,11 @@ import _ from "lodash"
 import store from '../store';
 
 const App = () => {
-  const { contacts } = store.getState();
+  const { contacts, user, activeUserId } = store.getState();
   return (
     <div className="App">
       <Sidebar contacts={_.values(contacts)} />
-      <Main />
+      <Main user={user} activeUserId={activeUserId} />
     </div>
   ); 
 };
