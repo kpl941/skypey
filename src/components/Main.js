@@ -7,9 +7,9 @@ const Main = ({user, activeUserId}) => {
 
     const renderMainContent = () => {
         if(!activeUserId) {
-            return <Empty user={user} activateUserId={activeUserId}/>
+            return <Empty user={user} activeUserId={activeUserId}/>
         } else {
-            return <ChatWindow activateUserId={activeUserId}/>
+            return <ChatWindow activeUserId={activeUserId}/>
         }
     }
 
